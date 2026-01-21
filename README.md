@@ -87,5 +87,33 @@ y comprobamos que el Java Platform tiene la versión correcta:\
 Realizamos un Clean al proyecto y ejecutamos el main para probar que funciona.
 
 ### 3. Ejecución de proyecto en servidor local
+Una vez tengamos el proyecto listo para ejecutar pulsamos la flecha verde que hay en la barra superior de NetBeans y esperamos a que arranque el programa.
+En caso de tener varios archivos en el proyecto y, para evitar problemas, debemos iniciar el archivo pulsando click derecho>Run File.
+
+Cuando el programa esté arrancado y no haya dado ningún error podemos ir a un navegador cualquiera y acceder a la funcionalidad con este enlace:
+localhost:8080/hello donde localhost:8080 es el servidor local que ha creado el proyecto SpringBoot y /hello es el método que recibe como parámetro un nombre
+y muestra un mensaje de bienvenida.
+
+Por tanto, hay dos resultados tras ejecutar este ejercicio:\
+**1. localhost:8080/hello (sin parámetros)**\
+![Alt](webroot/images/ejecSP.PNG)\
+**2. localhost:8080/hello?name=Alvaro (con parámetro name = "Alvaro")**\
+![Alt](webroot/images/ejecCP.PNG)
+
+
 ### 4. Estructura de directorios del proyecto
+Al crear el proyecto se nos descarga un archivo comprimido con todas las carpetas del proyecto organizadas de la siguiente manera:\
+![Alt](webroot/images/estDir.PNG)
+
+> - **/.mvn:** carpeta interna de Maven Wrapper en la que están los archivos que usan Maven sin tener que instalarlo globlalmente y garantizar que todos los desarrolladores tengan la misma versión.
+> - **/src/main/java:** es la carpeta más importante ya que contiene el código real de la aplicación: clases, servicios, repositorios y clase principal.
+> - **/src/main/resources:** recursos que no son código java como: application.properties o application.yml, archivos de configuración, plantillas y archivos estáticos.
+> - **/src/main/webapp:** propia de aplicaciones web tradicionales donde se situan: JSP, HTML, CSS y JS. En SpringBoot no siempre se usa.
+> - **/src/test:** código de tests: unitarios o de integración.
+> - **/target:** carpeta generada al compilar. Nunca se edita a mano.
+> - **/webroot:** no es creada por SpringBoot sino por el usuario para guardar el contenido multimedia, estilos y demás archivos manejados por el desarrollador.
+> - **pom.xml:** el archivo más importante después del código donde se define: dependencias, versión de java usada, plugins y tipo de empaquetado.
+> - **mvnw y mvnw.cmd:** script de Maven Wrapper para Linux/macOS (el primero), y Windows (el segundo).
+
+
 ### 5. Control de versiones
