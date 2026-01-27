@@ -31,6 +31,6 @@ y el nombre y contraseña de un usuario administrador que creará NetBeans (este
 Al igual que en un servidor Apache HTTP, podemos editar algunos archivos de extensión .xml los cuales modifican la configuración del servidor como los usuarios 
 administradores, el puerto de acceso al servidor, etc... En nuestro caso debemos modificar al usuario para que pueda acceder a ciertas partes del servidor. 
 Esto se debe a que el rol que se le otorga por defecto no da todos los privilegios:
-![ALT](webroot/images/cTomcat.JPG)
+![ALT](webroot/images/cTomcatI.JPG)
 
 ### 4. Puesta en marcha
