@@ -15,21 +15,22 @@ javac -version
 
 Una vez comprobada la versión nos dirigimos al siguiente enlace de la página oficial de Apache Tomcat: https://tomcat.apache.org/whichversion.html
 en el cual se nos indica la mejor versión de Tomcat para nuestro java:\
-![ALT](webroot/images/)
+![ALT](webroot/images/vTomcat.JPG)
 
 Buscamos la versión correspondientes y nos descargamos el zip de 64bits. Los descomprimimos en una carpeta cualquiera (debemos recordar la ruta de dicha carpeta).
 
 ### 2. Integración en NetBeans
 A continuación, en NetBeans, vamos a la pestaña Services>Server>Add Server (click derecho). Se nos abre una ventana donde debemos introducir la ruta del zip descomprimido
 y el nombre y contraseña de un usuario administrador que creará NetBeans (este paso es opcional):\
-![ALT](webroot/images/)
-![ALT](webroot/images/)
-![ALT](webroot/images/)
+![ALT](webroot/images/sNetBeansI.JPG)
+![ALT](webroot/images/sNetBeansII.JPG)
+![ALT](webroot/images/sNetBeansIII.JPG)
+![ALT](webroot/images/sNetBeansIIII.JPG)
 
 ### 3. Configuración
 Al igual que en un servidor Apache HTTP, podemos editar algunos archivos de extensión .xml los cuales modifican la configuración del servidor como los usuarios 
 administradores, el puerto de acceso al servidor, etc... En nuestro caso debemos modificar al usuario para que pueda acceder a ciertas partes del servidor. 
 Esto se debe a que el rol que se le otorga por defecto no da todos los privilegios:
-![ALT](webroot/images/)
+![ALT](webroot/images/cTomcat.JPG)
 
 ### 4. Puesta en marcha
